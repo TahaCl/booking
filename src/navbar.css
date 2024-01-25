@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.navbar {
+    color: white;
+    background-color: #003b95;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    font-size: 23px;
+    margin: 0.8rem;
+}
+
+.currency,
+.country,
+.customerService,
+.listYourProperty,
+.register,
+.signin {
+    border: none;
+    background-color: transparent;
+    margin-left: 1rem;
+    text-transform: capitalize;
+    font-size: 15px;
+    height: 35px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: white;
+}
+
+.navbarComponents,
+.navbarComponentsToggle {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.register,
+.signin {
+    cursor: pointer;
+    background-color: white;
+    color: #003b95;
+    height: 30px;
+    width: 70px;
+    border-radius: 4px;
+}
+
+.register:hover {
+    background-color: #eef1f6;
+}
+
+.signin:hover {
+    background-color: #eef1f6;
+}
+
+.currency:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 4px;
+}
+
+.country:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 4px;
+}
+
+.customerService:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 4px;
+}
+
+.listYourProperty:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 4px;
+}
+
+.responsiveComponents {
+    display: none;
+}
+
+@media screen and (max-width:1022px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbarComponents {
+        display: none;
+    }
+
+    .navbarComponentsToggle {
+        position: fixed;
+        top: 65px;
+        left: 5px;
+        background-color: #ffffff;
+        height: 100vh;
+        width: 99vw;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .navbarToggle {
+        font-size: 23px;
+    }
+
+    .responsiveComponents {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 115px;
+        margin-right: 0.7rem;
+    }
+
+    .signinOutside {
+        border: 2px solid transparent;
+        background-color: transparent;
+        font-size: 15px;
+        cursor: pointer;
+        height: 35px;
+        width: 70px;
+        border-radius: 4px;
+        color: white;
+    }
+
+    .currency,
+    .country,
+    .customerService,
+    .listYourProperty,
+    .register,
+    .signin {
+        position: relative;
+        margin-bottom: 1.5rem;
+        /* right: 380px; */
+        bottom: 80px;
+        color: gray;
+        font-size: 18px;
+    }
+
+    .signinOutside:hover {
+        background-color: rgba(255, 255, 255, 0.116);
+        border-radius: 4px;
+    }
+
+    .navbarToggleCont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        height: 35px;
+        width: 40px;
+        border-radius: 4px;
+    }
+
+    .navbarToggleCont:hover {
+        background-color: rgba(255, 255, 255, 0.116);
+        border-radius: 4px;
+    }
+
+    .logo {
+        margin: 1.3rem;
+    }
+}
+
+.navbarSec {
+    background-color: #003b95;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* width: 100%; */
+    height: 60px;
+    padding-left: 1.3rem;
+    color: white;
+}
+
+.stays,
+.flights,
+.carRental,
+.more,
+.taxiLight,
+.attraction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: max-content;
+    padding: 1rem;
+    margin: 0.2rem;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.staysActive,
+.flightsActive,
+.carRentalActive,
+.moreActive,
+.taxiLightActive,
+.attractionActive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: max-content;
+    padding: 1rem;
+    margin: 0.2rem;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(238, 241, 246, 0.112);
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.stays:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 20px;
+}
+
+.flights:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 20px;
+}
+
+.carRental:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 20px;
+}
+
+.more:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 20px;
+}
+
+.taxiLight:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 20px;
+}
+
+.attraction:hover {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 20px;
+}
+
+.stays:active {
+    background-color: #a5bbdf9d;
+}
+
+@media screen and (max-width:710.0px) {
+
+    .taxiLight,
+    .attraction,
+    .taxiLightActive,
+    .attractionActive {
+        display: none;
+    }
+}
+
+@media screen and (min-width:710.0px) {
+
+    .more,
+    .moreActive {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1055px) {
+
+    .logo,
+    .navbarComponents,
+    .navbarSec {
+        padding-left: 2.7rem;
+        padding-right: 2.7rem;
+    }
+}

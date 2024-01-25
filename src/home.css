@@ -1,0 +1,138 @@
+.home {
+    background-color: #003b95;
+    height: 385px;
+    color: white;
+}
+
+.homeSlogan {
+    margin-left: 0.4rem;
+    width: fit-content;
+}
+
+.homeInfo {
+    background-color: #ffb700;
+    height: 240px;
+    margin: 2.5rem 0.5rem 0 0.5rem;
+    border-radius: 7px;
+    padding-top: 0.005rem;
+}
+
+.destination,
+.checkDate,
+.peopleInfo {
+    background-color: white;
+    margin: 0.25rem;
+    border-radius: 5px;
+    height: 55px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+
+.peopleInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeSearchBtn {
+    height: 55px;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    background-color: #1c67d8;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.homeSearchBtn:hover {
+    background-color: #003b95;
+    cursor: pointer;
+}
+
+.destination:hover {
+    border: 1px solid red;
+}
+
+.checkDate:hover {
+    border: 1px solid red;
+}
+
+.peopleInfo:hover {
+    border: 1px solid red;
+}
+
+.homeCheckbox {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0.4rem;
+    margin-top: 1rem;
+    /* background-color: #ffb700; */
+}
+
+.houseApart,
+.travelWork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width:1055px) {
+    .homeInfo {
+        display: flex;
+        height: 64px;
+        /* width: 1000px; */
+        width: fit-content;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .homeSearchInfoCont {
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .destination {
+        padding-right: 8rem;
+        margin-right: -0.005rem;
+    }
+
+    .checkDate {
+        padding-right: 3rem;
+        margin-right: -0.005rem;
+        /* overflow: hidden; */
+    }
+
+    .peopleInfo {
+        margin-right: -0.005rem;
+    }
+
+    .home {
+        height: 214px;
+    }
+
+    .homeSearchBtn {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .homeSlogan,
+    .homeCheckbox {
+        padding-left: 2.7rem;
+    }
+}
+
+/* @media screen and (max-width:1000px) {
+} */
